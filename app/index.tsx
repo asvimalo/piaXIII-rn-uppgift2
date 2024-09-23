@@ -19,10 +19,10 @@ export default function Index() {
   }
   return (
     <>
-      <View style={styles.vista1}>
-        <Text style={styles.numero}> {count} </Text>
+      <View style={styles.viewNumber}>
+        <Text style={styles.number}> {count} </Text>
       </View>
-      <View style={styles.vista2}>
+      <View style={styles.viewButtons}>
         <Button
           onPress={onPlus}
           title="PLUS"
@@ -50,14 +50,14 @@ export default function Index() {
 }
 
 const styles = StyleSheet.create({
-  vista1: {
+  viewNumber: {
     flex: 1,
     alignItems: "center",
   },
-  vista2: {
+  viewButtons: {
     flex: 5,
   },
-  numero: {
+  number: {
     fontSize: 30
   }
 })
