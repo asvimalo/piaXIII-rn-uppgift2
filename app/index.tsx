@@ -5,7 +5,6 @@ export default function Index() {
 
   const [count, setCount] = useState(0)
 
-  //PLUS" och "MINUS" som ökad/minskar siffran med 1. Låt inte siffra bli mindre än noll.
   function onPlus() {
     setCount(count + 1)
   }
@@ -53,7 +52,6 @@ export default function Index() {
 const styles = StyleSheet.create({
   vista1: {
     flex: 1,
-    //justifyContent: "center",
     alignItems: "center",
   },
   vista2: {
