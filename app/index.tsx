@@ -5,7 +5,7 @@ export default function Index() {
 
   const [count, setCount] = useState(0)
 
-//PLUS" och "MINUS" som ökad/minskar siffran med 1. Låt inte siffra bli mindre än noll.
+  //PLUS" och "MINUS" som ökad/minskar siffran med 1. Låt inte siffra bli mindre än noll.
   function onPlus() {
     setCount(count + 1)
   }
@@ -13,7 +13,10 @@ export default function Index() {
     if (count > 0) {
       setCount(count - 1)
     }
-    
+
+  }
+  function onReset() {
+    setCount(0)
   }
   return (
     <>
@@ -21,18 +24,24 @@ export default function Index() {
         <Text style={styles.numero}> {count} </Text>
       </View>
       <View style={styles.vista2}>
-      <Button
-        onPress={onPlus}
-        title="PLUS"
-        color="green"
-        
-      />
-      <Button
-        onPress={onMinus}
-        title="MINUS"
-        color="red"
-        
-      />
+        <Button
+          onPress={onPlus}
+          title="PLUS"
+          color="green"
+
+        />
+        <Button
+          onPress={onMinus}
+          title="MINUS"
+          color="red"
+
+        />
+        <Button
+          onPress={onReset}
+          title="RESET"
+          color="#841584"
+
+        />
       </View>
     </>
   );
