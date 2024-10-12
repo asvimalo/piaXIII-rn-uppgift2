@@ -35,15 +35,19 @@ export default function Index() {
           color="red"
 
         />
-        { count > 0 &&
-          <Button
-            onPress={onReset}
-            title="RESET"
-            color="#841584"
-
-          />
-        }
         
+        
+      </View>
+      <View style={{flex: 1}}></View>
+      <View style={{padding: 10}}> 
+        { count > 0 &&
+            <Button
+              onPress={onReset}
+              title="RESET"
+              color="#841584"
+              
+            />
+          }
       </View>
     </>
   );
